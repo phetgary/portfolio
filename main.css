@@ -17,6 +17,10 @@ body {
     background-size: cover;
 }
 
+section {
+    padding: 6rem;
+}
+
 a {
     text-decoration: none;
     color: #eee;
@@ -42,7 +46,7 @@ img {
 
 .section-heading {
     text-align: center;
-    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
 .section-heading h1 {
@@ -317,34 +321,18 @@ li {
 }
 
 .portfolio-img {
-    flex: 1px;
-}
-
-
-已由Julio Codes置顶
-Julio Codes
-1年前
-I made a mistake when it came to the portfolio section and I did not notice until someone pointed it out. Please be sure to READ this so that you can correct the issue.
-
-
-in the portfolio section of the CSS I had 
-
-
-.profile-img {
-    width: 50rem;
     flex: 1;
 }
 
-
-Please replace that with
-
-
-.portfolio-img {
-    flex: 1;
-}
 
 .portfolio-description {
     flex: 1;
+}
+
+.portfolio-description h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 1rem 0;
 }
 
 .portfolio-description h6 {
@@ -352,6 +340,19 @@ Please replace that with
     text-transform: uppercase;
     font-weight: 300;
     opacity: 0.3;
+}
+
+.portfolio-description .cta {
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #3883ff;
+    transition: color 650ms;
+}
+
+.portfolio-description .cta:hover {
+    color: #2f67cd;
 }
 
 
